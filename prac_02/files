@@ -1,0 +1,27 @@
+""""Does things to a file"""
+
+
+def main():
+    username = input("What is your name? :")
+    file_out = open('name.txt', 'w')
+    print(username, file=file_out)
+    file_out.close()
+    read_name()
+    read_numbers()
+    file_out.close()
+
+
+def read_name():
+    file_read = open('name.txt', 'r')
+    name = file_read.readline()
+    print("Your name is {}".format(name))
+
+
+def read_numbers():
+    file_numbers = open('numbers.txt', 'r')
+    num1 = int(file_numbers.readline())
+    num2 = int(file_numbers.readline())
+    print(num1 + num2)
+
+
+main()
