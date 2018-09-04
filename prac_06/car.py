@@ -13,6 +13,15 @@ class Car:
         self.odometer = 0
         self.name = name
 
+    def get_odo(self):
+        return self.odometer
+
+    def get_fuel(self):
+        return self.fuel
+
+    def get_name(self):
+        return self.name
+
     def add_fuel(self, amount):
         """Add amount to the car's fuel."""
         self.fuel += amount
