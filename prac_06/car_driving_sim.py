@@ -1,11 +1,11 @@
 """prac_06 extension: car driving simulator"""
 
-from prac_06.car import Car
+from prac_08.car import Car
 
 
 def main():
     user_name = input("Let's drive!\nEnter your car name:")
-    car = Car(100, user_name)
+    car = Car(user_name, 100)
 
     menu_selection = ""
     while menu_selection != "q":
